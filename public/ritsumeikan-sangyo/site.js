@@ -1,6 +1,11 @@
-// セクションのスクロール表示アニメーション
+// スクロールで要素をふわっと表示
 (function () {
-  if (!('IntersectionObserver' in window)) return;
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
   var obs = new IntersectionObserver(
     function (entries) {
       entries.forEach(function (e) {
@@ -10,9 +15,7 @@
         }
       });
     },
-    { threshold: 0.08 }
+    { threshold: 0.12 }
   );
-  document.querySelectorAll('section').forEach(function (s) {
-    obs.observe(s);
-  });
+  els.forEach(function (el) { obs.observe(el); });
 })();
