@@ -194,6 +194,17 @@ figure.wide{margin:8px 0 0;background:#fff;border-radius:var(--r);overflow:hidde
 figure.wide img{width:100%;display:block}
 figure.wide figcaption{padding:14px 20px;font-size:13px;color:var(--muted);text-align:center}
 
+/* ---------- 研究テーマ（枠で囲う：複数あるうちの一つ） ---------- */
+.rtheme{border:2px solid var(--blue);border-radius:22px;background:#fff;padding:30px 30px 32px;margin-top:8px;box-shadow:var(--shadow)}
+@media(max-width:600px){.rtheme{padding:24px 20px 26px}}
+.rtheme .rt-label{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.04em;padding:5px 16px;border-radius:999px;margin-bottom:16px}
+.rtheme .rt-title{font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:clamp(18px,2.8vw,22px);line-height:1.5;margin-bottom:14px}
+.rtheme-more{border:2px dashed #c7bfb0;border-radius:22px;padding:26px 28px;margin-top:18px;background:rgba(255,255,255,0.5)}
+.rtheme-more .h{font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.rtheme-more p{font-size:14.5px;line-height:1.95;color:var(--muted);margin:0}
+.rtheme-more .soon{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.rtheme-more .soon span{font-size:12.5px;font-weight:700;color:var(--muted);background:var(--cream);border:1.5px dashed #c7bfb0;border-radius:999px;padding:6px 16px}
+
 /* ---------- 5つの仕組み ---------- */
 .mechs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}
 @media(max-width:820px){.mechs{grid-template-columns:1fr 1fr}}
@@ -228,6 +239,12 @@ figure.wide figcaption{padding:14px 20px;font-size:13px;color:var(--muted);text-
 /* ---------- 代表プロフィール ---------- */
 .profile{background:#fff;border-radius:24px;padding:36px 34px;box-shadow:var(--shadow);margin-top:8px;border-top:6px solid var(--orange)}
 @media(max-width:600px){.profile{padding:28px 22px}}
+.profile-head{display:flex;gap:30px;align-items:flex-start}
+@media(max-width:620px){.profile-head{flex-direction:column;align-items:center;text-align:center}}
+.pphoto{flex:0 0 auto;width:190px;height:190px;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:var(--green-pale)}
+@media(max-width:620px){.pphoto{width:170px;height:170px}}
+.pphoto img{width:100%;height:100%;object-fit:cover;display:block}
+.profile-head .pinfo{flex:1;min-width:0}
 .profile .pname{font-family:'Zen Maru Gothic',sans-serif;font-size:clamp(23px,4vw,29px);font-weight:700}
 .profile .pname .en{font-size:0.5em;font-weight:500;color:var(--muted);margin-left:12px;letter-spacing:0.06em}
 .profile .prole{display:inline-block;font-size:12.5px;font-weight:700;color:var(--orange-d);background:var(--orange-pale);padding:4px 14px;border-radius:999px;margin-top:12px}
@@ -248,6 +265,19 @@ figure.wide figcaption{padding:14px 20px;font-size:13px;color:var(--muted);text-
 .tl .when{font-family:'Zen Maru Gothic',sans-serif;font-size:13px;font-weight:700;color:var(--orange-d);margin-bottom:8px}
 .tl .what{font-size:14.5px;font-weight:700;line-height:1.6;color:var(--ink)}
 .tl p{font-size:12.5px;line-height:1.8;color:var(--muted);margin-top:6px}
+
+/* ---------- メンバー一覧 ---------- */
+.members{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+@media(max-width:760px){.members{grid-template-columns:1fr 1fr}}
+@media(max-width:460px){.members{grid-template-columns:1fr}}
+.mcard{background:#fff;border-radius:20px;padding:28px 22px;box-shadow:var(--shadow);text-align:center;transition:transform .16s,box-shadow .16s}
+.mcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-family:'Zen Maru Gothic',sans-serif;font-weight:900;font-size:34px;color:#fff;box-shadow:0 6px 16px rgba(52,49,44,0.15)}
+.avatar svg{width:52px;height:52px;fill:rgba(255,255,255,0.9)}
+.mcard .mname{font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.02em}
+.mcard .mname .en{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.08em;color:var(--muted);margin-top:3px}
+.mcard .mrole{display:inline-block;font-size:12px;font-weight:700;color:var(--green-d);background:var(--green-pale);padding:4px 14px;border-radius:999px;margin-top:12px}
+.mcard .maff{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.7}
 
 /* ---------- CTA ---------- */
 .cta{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;border-radius:24px;padding:42px 36px;box-shadow:0 16px 40px rgba(53,169,106,0.28);margin-top:8px;text-align:center}
