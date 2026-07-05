@@ -34,6 +34,10 @@ body{
 a{color:inherit}
 img{max-width:100%}
 
+/* アンカー遷移時に固定ナビへ隠れないようオフセット */
+[id]{scroll-margin-top:92px}
+@media(max-width:640px){[id]{scroll-margin-top:128px}}
+
 h1,h2,h3,.mincho{font-family:'Zen Maru Gothic',sans-serif}
 
 /* ---------- ナビゲーション ---------- */
@@ -42,7 +46,8 @@ h1,h2,h3,.mincho{font-family:'Zen Maru Gothic',sans-serif}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
 .brand .mark{width:38px;height:38px;flex:0 0 auto;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Zen Maru Gothic',sans-serif;font-weight:900;font-size:15px;color:#fff;background:linear-gradient(135deg,var(--green),var(--orange));line-height:1;white-space:nowrap;letter-spacing:0;box-shadow:0 4px 10px rgba(247,144,56,0.3)}
 .brand .bt{font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:15px;line-height:1.3;letter-spacing:0.02em}
-.brand .bs{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.16em;color:var(--muted)}
+.brand .bs{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:500;font-size:10.5px;letter-spacing:0.02em;color:var(--muted);margin-top:1px}
+@media(max-width:400px){.brand .bs{font-size:9.5px}}
 .navlinks{display:flex;flex-wrap:wrap;gap:4px}
 .navlinks a{text-decoration:none;font-size:14px;font-weight:700;letter-spacing:0.02em;color:var(--ink);padding:8px 15px;border-radius:999px;transition:all .16s}
 .navlinks a:hover,.navlinks a:focus-visible{background:var(--green-pale);color:var(--green-d)}
