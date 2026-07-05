@@ -21,25 +21,85 @@
     <div class="navlinks">
       <a href="#research">研究内容</a>
       <a href="#about">私たちについて</a>
-      <a href="#profile">代表</a>
-      <a href="/ritsumeikan-sangyo/members">メンバー</a>
+      <a href="#members">メンバー</a>
+      <a href="/ritsumeikan-sangyo/profile">代表</a>
       <a href="#news">お知らせ</a>
+      <a href="#contact">お問い合わせ</a>
     </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <div class="wrap">
-    <span class="kicker">🌱 全国の大学生による研究会 ／ 2026年7月 発足</span>
-    <h1>日本の<span class="mk">ものづくり</span>を、<br><span class="o">大学生</span>から<span class="g">次の世代</span>へ。</h1>
-    <p class="lead">
-      私たちは、<strong>東大・慶大・立命館グループの学生十数名</strong>による研究会です。<br>
-      各人が研究しているAIやセンサー、ロボットといった<strong>最先端技術</strong>を持ち寄り、日本の一次産業・二次産業の継承に寄与することを目標としています。<br>
-      <strong>生粋の技術者としての好奇心</strong>を武器に、日本の一次産業・二次産業のものづくりを受け継ぐ仕組みづくりに挑んでいます。
-    </p>
-    <div class="btnrow">
-      <a class="btn green" href="#research">研究内容を見る →</a>
-      <a class="btn ghost" href="#profile">代表プロフィール</a>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="kicker">🌱 全国の大学生による研究会 ／ 2026年7月 発足</span>
+      <h1>日本の<span class="mk">ものづくり</span>を、<br><span class="o">大学生</span>から<span class="g">次の世代</span>へ。</h1>
+      <p class="lead">
+        私たちは、<strong>東大・慶大・立命館グループの学生十数名</strong>による研究会です。<br>
+        各人が研究しているAIやセンサー、ロボットといった<strong>最先端技術</strong>を持ち寄り、日本の一次産業・二次産業の継承に寄与することを目標としています。<br>
+        <strong>生粋の技術者としての好奇心</strong>を武器に、日本の一次産業・二次産業のものづくりを受け継ぐ仕組みづくりに挑んでいます。
+      </p>
+      <div class="btnrow">
+        <a class="btn green" href="#research">研究内容を見る →</a>
+        <a class="btn ghost" href="#contact">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 520 470" role="img" aria-labelledby="heroArtTitle heroArtDesc" xmlns="http://www.w3.org/2000/svg">
+        <title id="heroArtTitle">技術継承の階層図</title>
+        <desc id="heroArtDesc">現場の技術が、記録・可視化・継承の段階を経て、次の世代へ受け継がれていく階層構造を表した図</desc>
+        <defs>
+          <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3FB877"/><stop offset="1" stop-color="#2C8C57"/></linearGradient>
+          <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4FA6E6"/><stop offset="1" stop-color="#2E7DBD"/></linearGradient>
+          <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBA24F"/><stop offset="1" stop-color="#E4771B"/></linearGradient>
+          <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD873"/><stop offset="1" stop-color="#F79038"/></linearGradient>
+          <linearGradient id="gArrow" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#35A96A"/><stop offset="0.5" stop-color="#3E97DB"/><stop offset="1" stop-color="#F79038"/></linearGradient>
+          <radialGradient id="gBg" cx="0.5" cy="0.42" r="0.62"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F7F1"/></radialGradient>
+        </defs>
+
+        <rect x="8" y="8" width="504" height="454" rx="34" fill="url(#gBg)"/>
+
+        <!-- 上向きの継承フロー（背景モチーフ） -->
+        <path d="M92 402 L404 96" stroke="url(#gArrow)" stroke-width="24" stroke-linecap="round" opacity="0.16"/>
+        <path d="M404 96 l-3 34 l32 -14 Z" fill="#F79038" opacity="0.28"/>
+
+        <!-- 階段状の4段（技術が受け継がれる段階） -->
+        <!-- 1: 現場の技 -->
+        <g>
+          <rect x="34" y="352" width="210" height="50" rx="16" fill="url(#gGreen)"/>
+          <circle cx="70" cy="377" r="18" fill="#ffffff" opacity="0.9"/>
+          <g fill="#2C8C57"><circle cx="70" cy="372" r="5"/><path d="M60 388 c0 -7 4.5 -11 10 -11 s10 4 10 11 Z"/></g>
+          <text x="100" y="384" font-family="'Zen Maru Gothic',sans-serif" font-size="18" font-weight="700" fill="#ffffff">現場の技</text>
+        </g>
+        <!-- 2: 記録・可視化 -->
+        <g>
+          <rect x="94" y="282" width="210" height="50" rx="16" fill="url(#gBlue)"/>
+          <circle cx="130" cy="307" r="18" fill="#ffffff" opacity="0.9"/>
+          <g fill="#2E7DBD"><circle cx="130" cy="302" r="5"/><path d="M120 318 c0 -7 4.5 -11 10 -11 s10 4 10 11 Z"/></g>
+          <text x="160" y="314" font-family="'Zen Maru Gothic',sans-serif" font-size="18" font-weight="700" fill="#ffffff">記録・可視化</text>
+        </g>
+        <!-- 3: 継承 -->
+        <g>
+          <rect x="154" y="212" width="210" height="50" rx="16" fill="url(#gOrange)"/>
+          <circle cx="190" cy="237" r="18" fill="#ffffff" opacity="0.9"/>
+          <g fill="#E4771B"><circle cx="190" cy="232" r="5"/><path d="M180 248 c0 -7 4.5 -11 10 -11 s10 4 10 11 Z"/></g>
+          <text x="220" y="244" font-family="'Zen Maru Gothic',sans-serif" font-size="18" font-weight="700" fill="#ffffff">継承する</text>
+        </g>
+        <!-- 4: 次世代へ -->
+        <g>
+          <rect x="214" y="142" width="210" height="50" rx="16" fill="url(#gGold)"/>
+          <circle cx="250" cy="167" r="18" fill="#ffffff" opacity="0.92"/>
+          <g fill="#E4771B"><circle cx="250" cy="162" r="5"/><path d="M240 178 c0 -7 4.5 -11 10 -11 s10 4 10 11 Z"/></g>
+          <text x="280" y="174" font-family="'Zen Maru Gothic',sans-serif" font-size="18" font-weight="700" fill="#ffffff">次世代へ</text>
+        </g>
+
+        <!-- 上部：芽（未来・成長） -->
+        <g transform="translate(398,104)">
+          <path d="M0 26 C0 12 -14 6 -22 4 C-18 18 -6 24 0 26 Z" fill="#3FB877"/>
+          <path d="M0 26 C0 12 14 6 22 4 C18 18 6 24 0 26 Z" fill="#35A96A"/>
+          <rect x="-2.5" y="24" width="5" height="20" rx="2.5" fill="#2C8C57"/>
+        </g>
+      </svg>
     </div>
   </div>
 </header>
@@ -49,37 +109,20 @@
 <!-- 研究・活動：LPのように早い段階で活動が伝わる画像を配置 -->
 <section id="research" class="reveal">
   <div class="wrap">
-    <div class="sec-label"><span class="badge b">🔬</span><h2>私たちの研究・活動<span class="sub">RESEARCH — 町工場の暗黙知を、承継できる資産に変える</span></h2></div>
-    <p class="lead-p">職人の頭の中にある技術を、AI・センシングで抽出し、次の世代が受け継げるかたちに。</p>
-    <p>
-      私たちは、一次産業・二次産業の継承につながる研究を<strong>複数のテーマ</strong>で進めています。ここでは、いま特に力を入れている町工場のテーマをご紹介します。
-    </p>
+    <div class="sec-label"><span class="badge b">🔬</span><h2>私たちの研究・活動<span class="sub">RESEARCH</span></h2></div>
+    <p>私たちは、一次産業・二次産業の継承につながる研究を<strong>複数のテーマ</strong>で進めています。いま特に力を入れているのが、町工場のテーマです。</p>
 
-    <div class="rtheme">
-      <span class="rt-label">🔬 研究テーマ 01</span>
-      <div class="rt-title">町工場の暗黙知を、承継できる資産に変える</div>
-      <p>
-        私たちが大学の研究室とも連携しながら進めているのが、<strong>町工場の「暗黙知」を承継できる資産に変える</strong>研究です。ベテラン職人の技術は、言葉になっていない「暗黙知」のまま。人が減っていくいま、これをどう次の世代へ渡すかが最大の課題です。私たちは、その技術を<span class="cb">自動で抽出し、データとして蓄積・可視化する</span>ために、次の<strong>5つの仕組み</strong>を組み合わせます。
-      </p>
-
-      <figure class="wide">
-        <img src="/ritsumeikan-sangyo/img/ai-tacit-knowledge.jpg" alt="AIで暗黙知を抽出する5つの仕組みの図解：PC業務の記録・可視化、現場動線の3D可視化、対話型AIロボットによる現場インタビュー、設備コンディションの可視化、生産量のリアルタイム可視化">
-        <figcaption>AI・センシングで暗黙知を抽出する「5つの仕組み」</figcaption>
-      </figure>
-
-      <div class="mechs">
-        <div class="mech"><div class="mn">1</div><div class="mt">PC業務の流れを記録・可視化</div></div>
-        <div class="mech"><div class="mn">2</div><div class="mt">現場の動線・作業を3Dで可視化</div></div>
-        <div class="mech"><div class="mn">3</div><div class="mt">対話型AIロボによる現場インタビュー</div></div>
-        <div class="mech"><div class="mn">4</div><div class="mt">設備コンディションを可視化</div></div>
-        <div class="mech"><div class="mn">5</div><div class="mt">生産量をリアルタイムに可視化</div></div>
+    <a class="rcard" href="/ritsumeikan-sangyo/research">
+      <div class="rcard-body">
+        <span class="rt-label">🔬 研究テーマ 01</span>
+        <div class="rt-title">町工場の暗黙知を、承継できる資産に変える</div>
+        <p>ベテラン職人の頭の中にある「暗黙知」を、AI・センシングで自動的に抽出し、データとして蓄積・可視化する。人が減っていくいま、町工場の技術を次の世代が受け継げるかたちに変える研究です。</p>
+        <span class="rcard-more">研究の詳細を見る →</span>
       </div>
-
-      <div class="callout blue" style="margin-top:28px">
-        <div class="h">🎓 大学の研究室と連携</div>
-        <p>この研究は、大学の研究室とも連携しながら進めています。学生ならではのフットワークで町工場の現場に入り込み、そこで得た気づきを研究の裏付けと掛け合わせていく——それが私たちのスタイルです。</p>
+      <div class="rcard-img">
+        <img src="/ritsumeikan-sangyo/img/ai-tacit-knowledge.jpg" alt="AIで暗黙知を抽出する5つの仕組みの図解プレビュー" loading="lazy">
       </div>
-    </div>
+    </a>
 
     <div class="rtheme-more">
       <div class="h">🌱 研究テーマは、これからも増えていきます</div>
@@ -87,25 +130,7 @@
       <div class="soon">
         <span>研究テーマ 02 ─ Coming soon</span>
         <span>研究テーマ 03 ─ Coming soon</span>
-        <span>一次産業の現場へ</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- なぜ町工場か（危機感・使命感） -->
-<section id="urgency" class="band-orange">
-  <div class="wrap reveal">
-    <div class="sec-label"><span class="badge o">🏭</span><h2>なぜ、いま町工場なのか<span class="sub">OUR SENSE OF URGENCY</span></h2></div>
-    <p>
-      労働人口が減り、マーケットが縮小していく日本。この先も日本の製造業が存在感を保つには、<strong>中小の製造業＝町工場が、それぞれの技術を磨き、力を合わせていく</strong>ことが欠かせないと私たちは考えています。
-    </p>
-    <p>
-      検品のような<span class="co">下流の工程</span>のDXは、これまで大きく進化してきました。けれど、それだけでは町工場の<span class="co">技術そのものの継承</span>にはまったく足りない——。そんな危機感が、この研究会を立ち上げ、町工場に注力する原動力になりました。
-    </p>
-    <div class="callout yellow">
-      <div class="h">🔥 私たちの使命</div>
-      <p>下流の工程だけでなく、ものづくりの根っこにある「技術そのもの」を継承できる仕組みをつくる。難しいテーマですが、だからこそ本気で取り組む価値があると考えています。</p>
     </div>
   </div>
 </section>
@@ -153,8 +178,81 @@
       <div class="row"><div class="k">代表</div><div class="v">油谷 駿杜（立命館 国際経営学部 1年）</div></div>
       <div class="row"><div class="k">注力分野</div><div class="v">一次産業・二次産業のものづくり。いま特に町工場に注力。</div></div>
     </div>
-    <div class="btnrow" style="margin-top:26px">
-      <a class="btn green" href="/ritsumeikan-sangyo/members">メンバーを見る →</a>
+  </div>
+</section>
+
+<!-- メンバー（「私たちについて」と「代表プロフィール」の間） -->
+<section id="members" class="band-blue">
+  <div class="wrap reveal">
+    <div class="sec-label"><span class="badge b">👥</span><h2>メンバー<span class="sub">MEMBERS</span></h2></div>
+    <p>東京大学・慶應義塾大学・立命館大学グループから集まった、ものづくりが大好きな学生たち。大学の枠を越えて、それぞれの専門を持ち寄っています。<span class="small">（※写真・氏名はサンプルです）</span></p>
+
+    <div class="members" style="margin-top:22px">
+      <div class="mcard">
+        <div class="avatar" style="background:linear-gradient(135deg,#35A96A,#2C8C57)">佐</div>
+        <div class="mname">佐藤 陽向<span class="en">Hinata Sato</span></div>
+        <div class="mrole">副代表 ／ センシング担当</div>
+        <div class="maff">東京大学 工学部</div>
+      </div>
+      <div class="mcard">
+        <div class="avatar" style="background:linear-gradient(135deg,#F79038,#E4771B)">鈴</div>
+        <div class="mname">鈴木 詩織<span class="en">Shiori Suzuki</span></div>
+        <div class="mrole">リサーチリード</div>
+        <div class="maff">慶應義塾大学 経済学部</div>
+      </div>
+      <div class="mcard">
+        <div class="avatar" style="background:linear-gradient(135deg,#3E97DB,#2E7DBD)">田</div>
+        <div class="mname">田中 康平<span class="en">Kohei Tanaka</span></div>
+        <div class="mrole">ロボティクス担当</div>
+        <div class="maff">立命館大学 理工学部</div>
+      </div>
+    </div>
+
+    <div class="members-extra-wrap" id="membersExtra">
+      <div class="inner">
+        <div class="members" style="margin-top:18px">
+          <div class="mcard">
+            <div class="avatar" style="background:linear-gradient(135deg,#F79038,#E4771B)">山</div>
+            <div class="mname">山本 芽衣<span class="en">Mei Yamamoto</span></div>
+            <div class="mrole">AI・データ解析</div>
+            <div class="maff">立命館アジア太平洋大学<br>サステイナビリティ観光学部</div>
+          </div>
+          <div class="mcard">
+            <div class="avatar" style="background:linear-gradient(135deg,#3E97DB,#2E7DBD)">中</div>
+            <div class="mname">中村 大地<span class="en">Daichi Nakamura</span></div>
+            <div class="mrole">フィールドワーク担当</div>
+            <div class="maff">東京大学 農学部</div>
+          </div>
+          <div class="mcard">
+            <div class="avatar" style="background:linear-gradient(135deg,#35A96A,#2C8C57)">小</div>
+            <div class="mname">小林 結菜<span class="en">Yuina Kobayashi</span></div>
+            <div class="mrole">デザイン・広報</div>
+            <div class="maff">慶應義塾大学 環境情報学部</div>
+          </div>
+          <div class="mcard">
+            <div class="avatar" style="background:linear-gradient(135deg,#3E97DB,#2E7DBD)">加</div>
+            <div class="mname">加藤 悠真<span class="en">Yuma Kato</span></div>
+            <div class="mrole">ハードウェア開発</div>
+            <div class="maff">立命館大学 情報理工学部</div>
+          </div>
+          <div class="mcard">
+            <div class="avatar" style="background:linear-gradient(135deg,#35A96A,#2C8C57)">渡</div>
+            <div class="mname">渡辺 千尋<span class="en">Chihiro Watanabe</span></div>
+            <div class="mrole">ビジネス・渉外</div>
+            <div class="maff">立命館アジア太平洋大学<br>国際経営学部</div>
+          </div>
+          <div class="mcard">
+            <div class="avatar" style="background:linear-gradient(135deg,#F79038,#E4771B)">伊</div>
+            <div class="mname">伊藤 颯<span class="en">Hayate Ito</span></div>
+            <div class="mrole">現場インタビュー担当</div>
+            <div class="maff">東京大学 工学部</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="members-toggle">
+      <button type="button" class="btn ghost" id="memberToggle" aria-expanded="false" aria-controls="membersExtra">もっと見る ↓</button>
     </div>
   </div>
 </section>
@@ -163,7 +261,8 @@
 <section id="profile" class="band-green">
   <div class="wrap reveal">
     <div class="sec-label"><span class="badge o">👤</span><h2>代表プロフィール<span class="sub">REPRESENTATIVE</span></h2></div>
-    <div class="profile">
+    <p>この研究会は、<strong>一次産業と二次産業に人一倍強い思いを持つ代表・油谷駿杜の呼びかけ</strong>によって生まれました。その思いに共感した学生が全国から集い、大学の枠を越えたチームになっています。</p>
+    <div class="profile" style="margin-top:20px">
       <div class="profile-head">
         <div class="pphoto"><img src="/ritsumeikan-sangyo/img/aburaya.jpg" alt="代表 油谷駿杜の写真"></div>
         <div class="pinfo">
@@ -172,47 +271,10 @@
           <p class="plead">
             全国<strong>200以上の工場</strong>を趣味で訪問する「町工場オタク」。子どもの頃から何台ものパソコンを自作し、工場で使われるハードも自分でつくってしまう<span class="co">生粋の技術者</span>です。高校時代には自ら<strong>無人検品システム</strong>を開発し、80以上の工場へ提供してきました。技術と現場の両方を知る学生として、町工場の技術継承に挑んでいます。
           </p>
+          <a class="profile-more" href="/ritsumeikan-sangyo/profile">プロフィールをもっと見る →</a>
         </div>
       </div>
     </div>
-    <div class="voice" style="margin-top:18px"><span class="in">現場に足を運び、自分の手でつくる。<br>技術は、そこからしか受け継げない。</span></div>
-
-    <div class="stats" style="margin-top:22px">
-      <div class="stat"><div class="num"><em>200</em>+</div><div class="lb">全国の工場を訪問した<br>町工場オタク</div></div>
-      <div class="stat"><div class="num"><em>80</em>+</div><div class="lb">自作の検品システムを<br>提供した工場</div></div>
-      <div class="stat"><div class="num">Brownie</div><div class="lb">株式会社Brownie<br>代表</div></div>
-      <div class="stat"><div class="num">特別賞</div><div class="lb">マイプロジェクト<br>アワード受賞</div></div>
-    </div>
-
-    <h3 style="margin-top:34px">🛠️ 自分の手でつくってきたもの</h3>
-    <p>
-      高校時代に開発したのは、<span class="cb">オフライン・低コスト・汎用タブレット1台だけ</span>で動く無人検品システム「Ai-Capt」。株式会社Brownieの代表として、これを全国80以上の小さな工場へ届けてきました。
-    </p>
-    <div class="figs">
-      <figure class="fig">
-        <img src="/ritsumeikan-sangyo/img/ai-capt-product.jpg" alt="株式会社Brownieが提供するAI検品自動化システム「Ai-Capt」。汎用タブレットを使った検品ハード" loading="lazy">
-        <figcaption><b>自作の検品ハード「Ai-Capt」</b>／小さな工場に最適なDXを、汎用タブレットで提供。</figcaption>
-      </figure>
-      <figure class="fig">
-        <img src="/ritsumeikan-sangyo/img/ai-capt-results.jpg" alt="Ai-Captの導入実績。導入件数81件、導入先はすべて小さな工場、全国へ導入エリアを拡大中" loading="lazy">
-        <figcaption><b>導入実績81件</b>／導入先はすべて小さな工場。全国へ広がっています。</figcaption>
-      </figure>
-    </div>
-
-    <h3 style="margin-top:34px">🌏 なぜ、国際経営学部へ？</h3>
-    <p>
-      油谷が立命館の国際経営学部を選んだのには、技術者らしい理由があります。「<span class="cb">オフラインで、低コストで、汎用タブレットだけで検品ができる</span>——このハードは、発展途上国でも使えるのではないか」。自分がつくったハードの可能性をそこに感じたことが、進学を決めた理由でした。技術への<span class="co">純粋な好奇心</span>が、彼をものづくりの現場へ、そして世界へと向かわせています。
-    </p>
-
-    <h3 style="margin-top:34px">🔥 危機感から、この研究会へ</h3>
-    <p>
-      検品システムを全国の工場に届けるなかで、油谷はある危機感を強めていきました。検品のような<span class="co">下流の工程</span>を変えるだけでは、町工場の技術そのものの継承には<span class="co">まったく役立てない</span>——。その危機感と使命感が、全国の大学生とともに<strong>この研究会を立ち上げる</strong>ことにつながりました。
-    </p>
-
-    <h3 style="margin-top:34px">🌾 関心は、町工場から「地域の総合力」へ</h3>
-    <p>
-      油谷の関心は、町工場のものづくりだけにとどまりません。農業や漁業といった<strong>一次産業</strong>から、加工や製造を担う<strong>二次産業</strong>まで——地域を支えるあらゆるものづくりが結びついた<span class="co">「地域の総合力」</span>にこそ、日本の未来を切り拓く可能性があると考えています。町工場はその入り口。ここから、地域全体の継承へと視野を広げていきます。
-    </p>
   </div>
 </section>
 
@@ -269,6 +331,45 @@
   </div>
 </section>
 
+<!-- お問い合わせ -->
+<section id="contact" class="band-orange">
+  <div class="wrap reveal">
+    <div class="sec-label"><span class="badge o">✉️</span><h2>お問い合わせ<span class="sub">CONTACT</span></h2></div>
+    <p>取材・見学のご相談、活動へのご参加、ご協力のお申し出など、お気軽にお問い合わせください。いただいた内容は担当メンバーが確認し、順次ご返信します。</p>
+
+    <!-- ▼ action はお問い合わせ先のフォーム送信先（例：Formspree 等）に差し替えてください ▼ -->
+    <form class="form" action="https://formspree.io/f/your-form-id" method="POST">
+      <div class="field">
+        <label for="cf-name">お名前<span class="req">必須</span></label>
+        <input type="text" id="cf-name" name="name" autocomplete="name" required placeholder="山田 太郎">
+      </div>
+      <div class="field">
+        <label for="cf-email">メールアドレス<span class="req">必須</span></label>
+        <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="cf-type">お問い合わせ種別<span class="opt">任意</span></label>
+        <select id="cf-type" name="type">
+          <option value="">選択してください</option>
+          <option value="取材・メディア">取材・メディア</option>
+          <option value="見学・訪問">見学・訪問</option>
+          <option value="参加・入会">参加・入会</option>
+          <option value="協力・連携">協力・連携</option>
+          <option value="その他">その他</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cf-message">お問い合わせ内容<span class="req">必須</span></label>
+        <textarea id="cf-message" name="message" required placeholder="お問い合わせ内容をご記入ください。"></textarea>
+      </div>
+      <div class="actions">
+        <button type="submit" class="btn green">送信する →</button>
+        <span class="note">送信いただいた個人情報は、お問い合わせへの対応のみに利用します。</span>
+      </div>
+    </form>
+  </div>
+</section>
+
 </main>
 
 <footer>
@@ -283,9 +384,11 @@
         <a href="#top">トップ</a>
         <a href="#research">研究内容</a>
         <a href="#about">私たちについて</a>
-        <a href="#profile">代表</a>
-        <a href="/ritsumeikan-sangyo/members">メンバー</a>
+        <a href="#members">メンバー</a>
+        <a href="/ritsumeikan-sangyo/research">研究テーマ</a>
+        <a href="/ritsumeikan-sangyo/profile">代表</a>
         <a href="#news">お知らせ</a>
+        <a href="#contact">お問い合わせ</a>
       </div>
     </div>
     <div class="copy">© 2026 全国大学生　1・2次産業研究会</div>
