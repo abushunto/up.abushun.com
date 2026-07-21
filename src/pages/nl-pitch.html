@@ -104,11 +104,10 @@
 
   /* hero */
   .hero{background:linear-gradient(160deg,#0f172a,#1e293b);color:#fff;border-bottom:none;text-align:center;padding:110px 0;}
+  .hero-logo{width:360px;max-width:70%;margin:0 auto 28px;height:auto;}
   .hero h1{font-size:56px;font-weight:900;margin:0 0 18px;letter-spacing:.01em;}
   .hero .co{font-size:20px;font-weight:700;margin-top:8px;}
   .hero .role{color:#c7d0dd;font-size:16px;}
-  .hero .logo-ph{margin:34px auto 0;max-width:240px;background:rgba(255,255,255,.06);
-    border:2px dashed rgba(255,255,255,.35);color:#c7d0dd;}
 
   /* antarctica card (emoji allowed here only) */
   .antarctica{background:linear-gradient(135deg,#e8f4ff,#f3ecff);border:1px solid #cfe0f5;
@@ -150,13 +149,10 @@
 <!-- ============ 1. ヒーロー ============ -->
 <section class="hero">
   <div class="wrap">
+    <img class="hero-logo" src="/nl-pitch/logo-hero-white.png" alt="Nelfin ロゴ" width="360">
     <h1>About nelfin <span class="gradtext">2027</span></h1>
     <div class="co">株式会社ネルフィン</div>
     <div class="role">代表取締役　油谷駿杜</div>
-    <div class="placeholder logo-ph">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
-      ネルフィンロゴ（public/nl-pitch/logo.png）
-    </div>
   </div>
 </section>
 
@@ -212,9 +208,8 @@
           <h3 style="font-size:21px;">RPA（パソコンの操作を登録すると自動実行できるツール）を使ったコンサルティングを提供</h3>
           <p style="font-size:18px;">業務の洗い出し・インタビュー・業務データの確認を重ねて自動化を設計</p>
         </div>
-        <div class="placeholder" style="min-height:200px;">
-          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
-          ネルフィンロゴ 縦ver（public/nl-pitch/logo-vertical.png）
+        <div class="center">
+          <img src="/nl-pitch/logo-vertical.png" alt="Nelfin ロゴ 縦ver" width="220" style="margin:0 auto;">
         </div>
       </div>
     </div>
@@ -401,11 +396,9 @@
   <div class="wrap">
     <span class="sec-num">08　デモ動画</span>
     <p class="lead">実際の動きをご覧ください</p>
-    <div class="placeholder" style="min-height:340px;">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none"/></svg>
-      デモ動画（public/nl-pitch/demo.mp4）を差し替えてください<br>
-      <span style="font-size:12px;">※動画配置後は、この枠を &lt;video controls src="..."&gt; に置き換え</span>
-    </div>
+    <video controls preload="metadata" playsinline src="/nl-pitch/demo.mp4">
+      お使いのブラウザは動画タグに対応していません。
+    </video>
   </div>
 </section>
 
