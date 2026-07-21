@@ -66,6 +66,24 @@
   .card h3{margin:0 0 12px;font-size:19px;font-weight:800;}
   .card .kicker{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.05em;margin-bottom:6px;}
 
+  /* 会社名 + 時系列カード */
+  .firm-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
+  .firm-head .kicker{margin-bottom:0;}
+  .period-card{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);
+    border-radius:999px;padding:5px 14px;font-size:13px;font-weight:800;background:var(--soft2);color:var(--ink);}
+  .period-card svg{width:15px;height:15px;color:var(--accent);flex:none;}
+  .period-card .age{color:var(--sub);font-weight:700;}
+
+  /* 1社目→2社目 の転換点ブリッジ */
+  .bridge{display:flex;align-items:center;gap:18px;margin:6px 4px 26px;}
+  .bridge-arrow{flex:none;color:var(--accent2);}
+  .bridge-arrow svg{width:34px;height:44px;}
+  .bridge-text{flex:1;background:linear-gradient(90deg,rgba(123,92,255,.09),rgba(47,109,246,.05));
+    border:1px dashed var(--accent2);border-radius:14px;padding:14px 18px;font-weight:700;line-height:1.75;}
+  .bridge-text .tp{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;
+    color:var(--accent2);border:1px solid var(--accent2);border-radius:999px;padding:1px 9px;margin-bottom:6px;}
+  @media(max-width:760px){.bridge{gap:12px;}.bridge-arrow svg{width:26px;height:34px;}}
+
   .ico{width:56px;height:56px;color:var(--accent);flex:none;}
   .ico-sm{width:34px;height:34px;color:var(--accent);flex:none;}
 
@@ -74,6 +92,17 @@
     color:var(--sub);display:flex;align-items:center;justify-content:center;
     text-align:center;padding:28px;min-height:160px;font-size:14px;gap:10px;flex-direction:column;
   }
+
+  /* セクション7 紙書類対応の強調ボックス */
+  .paper-box{display:flex;align-items:center;gap:18px;margin-top:26px;
+    border:2px solid var(--accent);border-radius:14px;padding:16px 22px;background:rgba(47,109,246,.05);}
+  .paper-box p{margin:0;font-weight:700;line-height:1.7;}
+  .paper-ico{flex:none;color:var(--accent);}
+  .paper-ico svg{width:46px;height:46px;}
+  .paper-kicker{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--accent);margin-bottom:2px;}
+  .paper-hl{color:var(--accent);font-weight:900;
+    background:linear-gradient(transparent 58%, rgba(47,109,246,.20) 58%);padding:0 2px;}
+  @media(max-width:760px){.paper-box{gap:12px;padding:14px 16px;}.paper-ico svg{width:36px;height:36px;}}
 
   .pill{display:inline-block;background:var(--soft2);border:1px solid var(--line);
     border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700;margin:3px;}
@@ -184,8 +213,14 @@
     <span class="sec-num">03　これまでの事業</span>
     <p class="lead">私はこれまで、2つの会社で現場の課題解決に取り組んできました</p>
 
-    <div class="card" style="margin-bottom:24px;">
-      <div class="kicker">株式会社Brownie</div>
+    <div class="card" style="margin-bottom:0;">
+      <div class="firm-head">
+        <div class="kicker">株式会社Brownie（1社目）</div>
+        <div class="period-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg>
+          2024年1月〜 <span class="age">16歳</span>
+        </div>
+      </div>
       <div class="grid2" style="align-items:center;">
         <div>
           <p>タブレット1台で動くAI検品システム「Ai-Capt」を開発。高齢の職人でも使える操作性と導入しやすい価格を両立</p>
@@ -201,8 +236,24 @@
       </div>
     </div>
 
+    <div class="bridge">
+      <div class="bridge-arrow">
+        <svg viewBox="0 0 24 44" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v34M4 28l8 10 8-10"/></svg>
+      </div>
+      <div class="bridge-text">
+        <span class="tp">1社目 → 2社目 転換点</span><br>
+        Ai-Captを全国へ広げる中で、2025年のAIの大進化に衝撃。検品にとどまらず、AIで挑戦するための『ラボ』として2社目を設立
+      </div>
+    </div>
+
     <div class="card">
-      <div class="kicker">株式会社ネルフィン</div>
+      <div class="firm-head">
+        <div class="kicker">株式会社ネルフィン（2社目）</div>
+        <div class="period-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg>
+          2026年2月〜 <span class="age">18歳</span>
+        </div>
+      </div>
       <div class="grid2" style="align-items:center;">
         <div>
           <h3 style="font-size:21px;">RPA（パソコンの操作を登録すると自動実行できるツール）を使ったコンサルティングを提供</h3>
@@ -387,7 +438,15 @@
         <p>自動化できる作業を月あたりの削減時間の目安とともに提案。AIエージェントが実行まで完結</p>
       </div>
     </div>
-    <p class="muted" style="margin-top:20px;text-align:center;">スキャナーやIoT連携、スマホカメラとの連動などによって、紙書類の自動化にも対応</p>
+    <div class="paper-box">
+      <div class="paper-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><line x1="7" y1="12" x2="17" y2="12"/><path d="M8 9h8M8 15h5"/></svg>
+      </div>
+      <div>
+        <div class="paper-kicker">今後の可能性</div>
+        <p>スキャナーやIoT連携、スマホカメラとの連動などによって、<span class="paper-hl">紙書類の自動化にも対応</span></p>
+      </div>
+    </div>
   </div>
 </section>
 
